@@ -1,0 +1,58 @@
+.bg-img {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+h2 {
+  font-size: 64px;
+  color: var(--cor-h2);
+  text-align: right;
+}
+
+.vantagens-container {
+  background-color: var(--bg-item);
+  padding: 30px;
+}
+
+.vantagens-item  {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 30px;
+  gap: 20px;
+
+}
+
+.vantagens-item:nth-child(odd) {
+  background-color: var(--cor-bg);
+}
+
+.vantagens-item:hover {
+  border-left: 4px solid var(--cor-hover);
+}
+
+.vantagens-item  h3{
+  color: var(--cor-subtitulo);
+}
+
+.vantagens-item p {
+  color: var(--cor-paragrafo);
+  font-size: 18px;
+  grid-column: 2/3;
+}
+
+@media (max-width:800px) {
+  h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width:660px) {
+  .bg-img {
+    justify-content: center;
+  }
+  h2 {
+    text-align: center;
+    font-size: 36px;
+  }
+}
